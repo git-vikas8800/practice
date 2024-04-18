@@ -10,9 +10,9 @@ router.get("/signup",usercontroller.signup);
 
 
 router.post("/signup",usercontroller.createuser);
-router.post('/signin',passport.authenticate(
+  router.post('/login',passport.authenticate(
   "local",
   {failureRedirect: "/signin",
   failureMessage: true}
-  ),usercontroller.createSession);
+  ),usercontroller.createSession); 
 module.exports= router;
