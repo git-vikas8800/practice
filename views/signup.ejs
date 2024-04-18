@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./css/signin.css">
+  <meta charset="UTF-8">
+  <title>My First Webpage</title>
+</head>
+
+<body>
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+  <div class="main" style="height: 76vh; margin:10vh 17vw ;" > 
+    <img src="./images/sign-in.svg" alt="">
+    <div class="signin-form">
+
+
+      <section>
+        <div style="text-align: center;">
+          <span> Create Account </span>
+          <p>Sign up to create your account.</p>
+        </div>
+      </section>
+
+
+
+      <section>
+        <form method="post" action="/signup">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="name" required>
+            </div>
+          <div class="input-box">
+            <input type="text" name="Username" placeholder="username" required>
+          </div>
+          <div class="input-box">
+            <input type="phone" name="Mobile" placeholder="mobile" required>
+          </div>
+          <div class="input-box">
+            <input id="view" type="password" name="Password" placeholder="password" required>
+          </div>
+          <div class="input-box">
+            <input id="view" type="password" name="Confirm_Password" placeholder="confirm password" required>
+          </div>
+          <button type="submit">Sign up</button>
+          <div>
+            <a href="/signin">
+              <p>Have an account login</p>
+            </a>
+            <a href="">
+              <p>need help?</p>
+            </a>
+          </div>
+        </form>
+      </section>
+
+
+      <section>
+        <div class="divider"></div>
+        <div>or</div>
+        <div class="divider"></div>
+      </section>
+
+      <button class="google">sign-up using google</button>
+    </div>
+    </div>
+    <h3>© 2024, Devlopment Corporation Pvt. Ltd. All Rights Reserved.</h3>
+
+</body>
