@@ -7,7 +7,7 @@ const User = require("..//models/user");
 
 
 passport.use(new LocalStrategy({
-    usernameField: "Username",
+    usernameField: "username",
     passwordField: "password",
     passReqToCallback : true 
 },
