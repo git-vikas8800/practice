@@ -1,20 +1,19 @@
 const passport = require("passport");
 const LocalStrategy = require('passport-local').Strategy;
-const User = require("..//models/user");
+const User = require("../models/user");
 
 
 
 
 
 passport.use(new LocalStrategy({
-    usernameField: "username",
-    passwordField: "password",
-    passReqToCallback : true 
+    usernameField: 'username',
+    passwordField : 'passward'
 },
 function(username,password,done){
     console.log(username,password);
     User.findOne({username: username}).then((user)=>{
-        console.log(user,"a");
+        console.log(user,"passport");
         if(!user){
             console.log("error in passport user is not found");
             return done(null,false);

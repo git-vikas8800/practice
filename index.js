@@ -2,21 +2,21 @@ const express= require("express");
 const db =require("./config/mongoose");
 const ejs = require("ejs");
 
-const passport = require('passport');
 const passportLocal = require('./config/passport-local');
+const passport = require('passport');
 const session = require("express-session");
 
-const path = require("path");
 const app = express();
+const path = require("path");
 const port = 3000;
 const bodyParser = require("body-parser");
 
 
-
-app.use(express.static("public"));
-app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
+app.use(express.static("public"));
+app.use(bodyParser.urlencoded({extended:true}));
+
 app.use(session({
 	name : "user",
 	//change secret before deployment
